@@ -1,0 +1,72 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+  background-color: #1c1c1c;
+  font-family: "IBM Plex Mono";
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+canvas {
+  position: fixed;
+  cursor: crosshair;
+}
+
+textarea {
+  position: absolute;
+  top: 40px;
+  right: 0px;
+  width: calc(50% - 20px);
+  height: calc(100vh - 62px);
+  resize: none;
+  font-family: "IBM Plex Mono";
+  font-size: 14px;
+  background-color: transparent;
+  border: none;
+  color: #f2f2f2;
+  padding: 10px;
+  border-left: 1px solid #404040;
+  outline: none;
+}
+
+/* Toolbar */
+
+#toolbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #2a2a2a;
+  border-bottom: 1px solid #404040;
+}
+
+button {
+  -webkit-appearance: none;
+  border: none;
+  border-right: 1px solid #404040;
+  background: none;
+  padding: 12px;
+  padding-left: 8px;
+  padding-right: 8px;
+  color: #f2f2f2;
+  margin: 0;
+  margin-right: -10px;
+  font-size: 14px;
+  font-family: "Inter";
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button:hover {
+  background-color: #404040;
+}
+
+button img {
+  height: 18px;
+  padding-right: 8px;
+}

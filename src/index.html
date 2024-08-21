@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Playground</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/resources/style/main.css" type="text/css" />
+    <link rel="stylesheet" href="/resources/style/fonts.css" type="text/css" />
+    <link rel="icon" type="image.png" href="/resources/images/favicon.png" />
+    <link rel="apple-touch-icon" href="/resources/images/favicon.png" />
+    <link rel="shortcut icon" href="/resources/images/favicon.png" />
+    <meta name="theme-color" content="#2a2a2a" />
+  </head>
+  <body>
+    <textarea spellcheck="false" id="main-textarea">
+(size 200 200)
+(rep 3
+  (fill (get @TINTCOLOR)
+    (circ
+      (add 50
+        (mul $ 100)
+      ) 150 100
+    )
+  )
+)</textarea
+    >
+    <!-- Canvas -->
+    <canvas id="main-canvas"></canvas>
+
+    <!-- Toolbar -->
+    <div id="toolbar">
+      <button onclick="runText()">
+        <img src="resources/images/icons/left.svg" />
+        <b>Evaluate</b>
+      </button>
+      <button onclick="importFile()">
+        <img src="resources/images/icons/up.svg" />
+        <b>Import</b>
+      </button>
+      <button onclick="downloadFile()">
+        <img src="resources/images/icons/down.svg" />
+        <b>Export</b>
+      </button>
+      <button onclick="exportArtboard()">
+        <img src="resources/images/icons/sun.svg" />
+        <b>Picture</b>
+      </button>
+      <button onclick="clearConsole()">
+        <img src="resources/images/icons/xmark.svg" />
+        <b>Clear Log</b>
+      </button>
+    </div>
+
+    <!-- Scripts -->
+    <script src="/resources/scripts/file.js"></script>
+    <script src="/resources/scripts/global.js"></script>
+    <script src="/resources/scripts/pointer.js"></script>
+    <script src="/resources/scripts/renderer.js"></script>
+    <script src="/resources/scripts/touch.js"></script>
+    <script src="/resources/scripts/setup.js"></script>
+    <script src="/resources/scripts/script/parser.js"></script>
+    <script src="/resources/scripts/script/library.js"></script>
+    <script src="/resources/scripts/script/runtime.js"></script>
+
+    <!-- (C) 2023 Lars Augustin -->
+  </body>
+</html>
